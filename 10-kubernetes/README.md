@@ -36,3 +36,8 @@ Q8  subscription-hpa   Deployment/subscription   cpu: <unknown>/20%   1   3   1
 - `kind create cluster` falló una vez con `connection refused` en el API server porque la máquina estaba
   sin CPU libre (entrenando el HW8). Con la CPU libre funcionó al primer intento.
 - Si Docker Desktop devuelve `Internal Server Error`, reiniciarlo.
+- Si `kind create cluster` falla con `failed while waiting for the control plane to start`, el control plane está
+  tardando más de los 4 minutos por defecto (pasa con Docker Desktop en Windows). Solución: un config de kind con
+  `timeouts.controlPlaneComponentHealthCheck: 10m0s` en la `InitConfiguration` y `--image kindest/node:v1.33.1`.
+- Si `kind load docker-image` parece colgado, es lentitud de Docker al exportar la imagen. Alternativa:
+  `docker save <imagen> -o image.tar && kind load image-archive image.tar --name <cluster>`.
