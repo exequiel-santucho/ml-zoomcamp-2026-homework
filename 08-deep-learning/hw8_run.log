@@ -1,0 +1,30 @@
+Q1 -> loss: nn.BCEWithLogitsLoss() (1 logit + sigmoid+BCE numéricamente estable)
+Q2 -> parámetros entrenables: 20073473
+[baseline] epoch  1 train_loss=0.6385 train_acc=0.6450 eval_loss=0.6010 eval_acc=0.6567 (54s)
+[baseline] epoch  2 train_loss=0.5441 train_acc=0.7175 eval_loss=0.6003 eval_acc=0.6517 (28s)
+[baseline] epoch  3 train_loss=0.4955 train_acc=0.7550 eval_loss=0.6405 eval_acc=0.6219 (23s)
+[baseline] epoch  4 train_loss=0.4330 train_acc=0.7913 eval_loss=0.6274 eval_acc=0.6915 (24s)
+[baseline] epoch  5 train_loss=0.4048 train_acc=0.8087 eval_loss=0.6293 eval_acc=0.6617 (24s)
+[baseline] epoch  6 train_loss=0.3953 train_acc=0.8075 eval_loss=0.6332 eval_acc=0.7114 (23s)
+[baseline] epoch  7 train_loss=0.3437 train_acc=0.8363 eval_loss=0.6895 eval_acc=0.6716 (24s)
+[baseline] epoch  8 train_loss=0.2806 train_acc=0.8850 eval_loss=0.6497 eval_acc=0.7214 (26s)
+[baseline] epoch  9 train_loss=0.2236 train_acc=0.9100 eval_loss=0.7114 eval_acc=0.7164 (94s)
+[baseline] epoch 10 train_loss=0.1584 train_acc=0.9387 eval_loss=1.0212 eval_acc=0.6368 (294s)
+[augmented] epoch  1 train_loss=0.6758 train_acc=0.6050 eval_loss=0.6552 eval_acc=0.6716 (112s)
+[augmented] epoch  2 train_loss=0.6129 train_acc=0.6475 eval_loss=0.6608 eval_acc=0.6269 (89s)
+[augmented] epoch  3 train_loss=0.5899 train_acc=0.6800 eval_loss=0.5787 eval_acc=0.7114 (25s)
+[augmented] epoch  4 train_loss=0.5923 train_acc=0.6750 eval_loss=0.5679 eval_acc=0.7114 (25s)
+[augmented] epoch  5 train_loss=0.5604 train_acc=0.7137 eval_loss=0.5680 eval_acc=0.7214 (25s)
+[augmented] epoch  6 train_loss=0.5567 train_acc=0.7075 eval_loss=0.5510 eval_acc=0.7015 (24s)
+[augmented] epoch  7 train_loss=0.5433 train_acc=0.7000 eval_loss=0.5291 eval_acc=0.7413 (25s)
+[augmented] epoch  8 train_loss=0.5317 train_acc=0.7288 eval_loss=0.5458 eval_acc=0.7065 (25s)
+[augmented] epoch  9 train_loss=0.5041 train_acc=0.7562 eval_loss=0.5557 eval_acc=0.7214 (25s)
+[augmented] epoch 10 train_loss=0.5398 train_acc=0.7050 eval_loss=0.5462 eval_acc=0.7313 (25s)
+
+======================================================================
+Q1: nn.BCEWithLogitsLoss()
+Q2: 20073473
+Q3: mediana train_accuracy (baseline)      = 0.81
+Q4: std(ddof=0) train_loss (baseline)      = 0.139
+Q5: media evaluation_loss (augmented)      = 0.576
+Q6: media últimas 5 eval_accuracy (augm.)  = 0.72

@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[oc]
+data/
+runs/
+tools/
+*.zip
+*.bin
+!05-deployment/pipeline.bin
+*.onnx
+*.onnx.data
+*.pt
+*.pth
+.env

@@ -1,0 +1,8 @@
+{
+  "output_dir": "runs\\reference",
+  "parameters": 20073473,
+  "baseline_median_train_accuracy": 0.808125,
+  "baseline_train_loss_std_population": 0.13934069829701942,
+  "augmented_mean_evaluation_loss": 0.575828219008683,
+  "augmented_last_five_evaluation_accuracy": 0.7203980099502487
+}
